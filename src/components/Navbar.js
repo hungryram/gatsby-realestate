@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
+import { FaUser } from 'react-icons/fa'
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -59,7 +61,7 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start has-text-right">
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -84,7 +86,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  <FaUser />
                 </span>
               </a>
             </div>
